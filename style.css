@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+#body-style {
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0, 9);
+    font-family: Helvetica, Arial, sans-serif;
+    color: seashell;
+}
+
+#landing {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    min-height: 4.3125rem;
+    background-color: rgb(0, 0, 0, 9);
+    border-bottom: 1px solid seashell;
+    z-index: 1;
+}
+
+#landing > :nth-child(1) {
+    margin-right: auto;
+    /*This code moves selected child to the right*/
+  }
+
+.logo {
+    position: relative;
+    height: 3.125rem;
+    left: 0.625rem;
+}
+
+.navs {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 1.25rem;
+}
+
+a p {
+    color: seashell;
+    text-decoration: underline;
+    width: auto;
+    margin: 0.625rem;
+    
+}
+
+#container-main {
+    width: 90%;
+    max-width: 75rem;
+    margin: auto;
+    top: 4.3125rem;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-1 {
+    min-height: 50rem;
+    width: 100%;
+    margin: auto;
+    background-image: url('./images/img-mission-background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.div-1 article {
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 9);
+    text-align: center;
+    top: 18.75rem;
+    height: auto;
+    font-weight: 700;
+}
+
+.div-1 article h2 {
+    width: 100%;
+    padding-top: 0.5rem;
+}
+
+.div-1 article h4 {
+    height: auto;
+    width: 100%;
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+.div-2 {
+    height: auto;
+    max-width: 75rem;
+    width: 100%;
+    padding-top: 4.375rem;
+    margin: auto;
+}
+
+.div-2 article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-weight: 700;
+}
+
+.sub-container {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    max-width: 62.5rem;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 5rem;
+}
+
+.sub-container figure div {
+    display: flex;
+    justify-content: center;
+    height: 12.5rem;
+    width: 20rem;
+    padding-top: 1.25rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    overflow: hidden;
+}
+
+.sub-container figure div img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.fig-cpt {
+    padding-top: 0.625rem;
+    font-weight: 700;
+}
+
+.div-3 {
+    min-height: 31.25rem;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-image: url('./images/img-locations-background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.location-txt {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    margin-top: 4.375rem;
+    margin-bottom: 0.9375rem;
+}
+
+.locations {
+    height: auto;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.locations article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    width: 18.75rem;
+    height: 18.75rem;
+    background-color: rgb(0, 0, 0, 9);
+    font-weight: 700;
+    margin: 0.5rem 1.25rem;
+}
+
+h3 {
+    font-size: 2rem;
+    border-bottom: 1.25rem;  
+}
+
+.div-3 div article p {
+    font-size: 1rem; 
+    font-weight: 100;
+}
+
+.div-4 {
+    height: 12.5rem;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    display: block;
+    height: 3.125rem;
+    width: 21.875rem;
+    top: 4.3125rem;
+    left: 1.25rem;
+}
+
+@media only screen and (max-width: 768px) {
+    #landing {
+        flex-direction: column;
+    }
+
+    #landing > :nth-child(1) {
+        margin-right: 0%;
+    }
+
+    .locations article {
+        margin: 0.5rem 0rem;
+    }
+    
+    footer {
+        width: 100%;
+        justify-items: center;
+        text-align: center;
+        left: 0%;
+    }
+}
